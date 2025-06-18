@@ -1,0 +1,25 @@
+{
+  "name": "YT chatbox",
+  "version": "0.1.0",
+  "description": "Botchat for videos",
+  "manifest_version": 3,
+  "permissions": ["storage", "tabs", "scripting", "activeTab"],
+  "host_permissions": [
+    "https://*.youtube.com/*",
+    "http://localhost:3001/*"
+  ],
+  "background": {
+  "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "options_page": "options.html",
+  "action": {
+    "default_title": "My YT Chatbox",
+    "default_popup": "popup.html"
+  }
+}

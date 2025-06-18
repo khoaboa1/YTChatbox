@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ChatGPT API Key Settings</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      width: 300px;
+    }
+
+    h2 {
+      margin-bottom: 12px;
+    }
+
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 8px 14px;
+      margin-right: 8px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    #saveBtn {
+      background-color: #0084ff;
+      color: white;
+    }
+
+    #clearBtn {
+      background-color: #ff4d4f;
+      color: white;
+    }
+
+    #useDefaultBtn {
+      background-color: gray;
+      color: white;
+      margin-top: 8px;
+    }
+
+    .status {
+      margin-top: 10px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <h2>Set ChatGPT API Key</h2>
+  <input type="password" id="apiKeyInput" placeholder="Enter your API key..." />
+  <br />
+  <button id="saveBtn">Save</button>
+  <button id="clearBtn">Clear</button>
+  <button id="useDefaultBtn">Don't have API key?</button>
+  <div class="status" id="statusMessage"></div>
+
+  <script src="options.js"></script>
+</body>
+</html>
